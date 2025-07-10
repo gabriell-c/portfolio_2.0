@@ -15,7 +15,7 @@ import certificates7 from './imgs/certificate/PHP.webp'; // caminho relativo
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
 import Preview3 from './read_me/preview.jpg'; // caminho relativo
-import Curriculo from '../public/Currículo Gabriel .pdf'
+import Curriculo from './read_me/Currículo Gabriel .pdf'; // caminho relativo
 
 // Import Swiper styles
 import 'swiper/css';
