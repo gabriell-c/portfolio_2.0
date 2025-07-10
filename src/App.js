@@ -5,6 +5,26 @@ import './index.css'; // Esta linha é essencial!
 import Card from './components/profile'; // caminho relativo
 import BackgroundEffect from './components/backgroundEffect'; // caminho relativo
 import Logo from './imgs/logo.webp';
+import certificates from './imgs/certificate/HTML5-e-CSS3.webp'; // caminho relativo
+import certificates2 from './imgs/certificate/Javascript.webp'; // caminho relativo
+import certificates3 from './imgs/certificate/Git-e-GitHub_4.webp'; // caminho relativo
+import certificates4 from './imgs/certificate/certificado-Banco-de-dados.webp'; // caminho relativo
+import certificates5 from './imgs/certificate/certificado_bootstrap.webp'; // caminho relativo
+import certificates6 from './imgs/certificate/certificado_typescript.webp'; // caminho relativo
+import certificates7 from './imgs/certificate/PHP.webp'; // caminho relativo
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation } from 'swiper/modules';
+import Preview3 from './read_me/preview.jpg'; // caminho relativo
+
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+
+
+
+// import required modules
+import { Pagination } from 'swiper/modules';
 
 function App() {
   const [darkMode, setDarkMode] = useState(true);
@@ -198,16 +218,13 @@ function App() {
             <h2 className="text-2xl md:text-3xl font-semibold mb-6 text-gray-600 dark:text-gray-300">
               Desenvolvedor Web Fullstack
             </h2>
-            <p className="text-lg md:text-xl mb-8 text-gray-600 dark:text-gray-300 max-w-lg">
-              Transformando ideias em soluções digitais com código limpo e designs impactantes.
-            </p>
             <div className="flex flex-wrap gap-4">
-              <a href="#" className="px-6 py-3 bg-purple-600 hover:bg-purple-700 text-white rounded-lg font-medium transition shadow-lg hover:shadow-purple-500/30">
+              <a href="./public/Currículo Gabriel .pdf" download="Currículo Gabriel .pdf" className="px-6 py-3 bg-purple-600 hover:bg-purple-700 text-white rounded-lg font-medium transition shadow-lg hover:shadow-purple-500/30">
                 Baixar Currículo
               </a>
-              <button onClick={() => scrollToSection('projects')} className="px-6 py-3 border-2 border-purple-600 text-purple-600 dark:text-purple-400 hover:bg-purple-600 hover:text-white dark:hover:text-white rounded-lg font-medium transition">
+              <a onClick={() => scrollToSection('projects')} className="px-6 py-3 border-2 border-purple-600 text-purple-600 dark:text-purple-400 hover:bg-purple-600 hover:text-white dark:hover:text-white rounded-lg font-medium transition">
                 Ver Projetos
-              </button>
+              </a>
             </div>
           </div>
           
@@ -242,7 +259,7 @@ function App() {
               </p>
               
               <div className="mt-8">
-                <a href="#" className="inline-flex items-center px-6 py-3 bg-purple-600 hover:bg-purple-700 text-white rounded-lg font-medium transition shadow-lg hover:shadow-purple-500/30">
+                <a href="./public/Currículo Gabriel .pdf" download="Currículo Gabriel .pdf" className="inline-flex items-center px-6 py-3 bg-purple-600 hover:bg-purple-700 text-white rounded-lg font-medium transition shadow-lg hover:shadow-purple-500/30">
                   <i className="fas fa-download mr-2"></i> Baixar Currículo (PDF)
                 </a>
               </div>
@@ -304,22 +321,22 @@ function App() {
             <div className="card-hover bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-lg transition-all duration-300">
               <div className="h-48 overflow-hidden">
                 <img 
-                  src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+                  src="https://raw.githubusercontent.com/gabriell-c/gomoney2.0/main/readme_img/GoMoney.png" 
                   alt="E-commerce Platform" 
                   className="w-full h-full object-cover"
                 />
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-bold mb-2">Plataforma E-commerce</h3>
+                <h3 className="text-xl font-bold mb-2">Sistema de controle financeiro</h3>
                 <p className="text-gray-600 dark:text-gray-300 mb-4">
-                  Plataforma completa de e-commerce com carrinho de compras, pagamentos e painel administrativo.
+                  Plataforma completa de controle financeiro com gerenciamento de despesas e receitas.
                 </p>
                 <div className="flex flex-wrap gap-2 mb-4">
                   <span className="px-3 py-1 bg-purple-100 dark:bg-purple-900/50 text-purple-800 dark:text-purple-200 rounded-full text-xs">React</span>
-                  <span className="px-3 py-1 bg-purple-100 dark:bg-purple-900/50 text-purple-800 dark:text-purple-200 rounded-full text-xs">Node.js</span>
-                  <span className="px-3 py-1 bg-purple-100 dark:bg-purple-900/50 text-purple-800 dark:text-purple-200 rounded-full text-xs">MongoDB</span>
+                  <span className="px-3 py-1 bg-purple-100 dark:bg-purple-900/50 text-purple-800 dark:text-purple-200 rounded-full text-xs">PHP</span>
+                  <span className="px-3 py-1 bg-purple-100 dark:bg-purple-900/50 text-purple-800 dark:text-purple-200 rounded-full text-xs">MySQL</span>
                 </div>
-                <a href="#" className="inline-flex items-center text-purple-600 dark:text-purple-400 hover:text-purple-800 dark:hover:text-purple-300 font-medium">
+                <a href="https://github.com/gabriell-c/gomoney2.0" className="inline-flex items-center text-purple-600 dark:text-purple-400 hover:text-purple-800 dark:hover:text-purple-300 font-medium">
                   Ver no GitHub <i className="fas fa-arrow-right ml-2"></i>
                 </a>
               </div>
@@ -329,22 +346,22 @@ function App() {
             <div className="card-hover bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-lg transition-all duration-300">
               <div className="h-48 overflow-hidden">
                 <img 
-                  src="https://images.unsplash.com/photo-1555421689-3f034debb7a6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+                  src="https://raw.githubusercontent.com/gabriell-c/trayt-react/main/readme_imgs/trayt_desktop.JPG" 
                   alt="Task Management App" 
                   className="w-full h-full object-cover"
                 />
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-bold mb-2">App de Gerenciamento de Tarefas</h3>
+                <h3 className="text-xl font-bold mb-2">Gerenciamento de videos com API</h3>
                 <p className="text-gray-600 dark:text-gray-300 mb-4">
-                  Aplicativo para organização pessoal com drag-and-drop, categorias e lembretes.
+                  API com vídeos de streaming consumida em app React com filtros, busca, ordenação e layout responsivo.
                 </p>
                 <div className="flex flex-wrap gap-2 mb-4">
-                  <span className="px-3 py-1 bg-purple-100 dark:bg-purple-900/50 text-purple-800 dark:text-purple-200 rounded-full text-xs">TypeScript</span>
+                  <span className="px-3 py-1 bg-purple-100 dark:bg-purple-900/50 text-purple-800 dark:text-purple-200 rounded-full text-xs">Node</span>
                   <span className="px-3 py-1 bg-purple-100 dark:bg-purple-900/50 text-purple-800 dark:text-purple-200 rounded-full text-xs">React</span>
-                  <span className="px-3 py-1 bg-purple-100 dark:bg-purple-900/50 text-purple-800 dark:text-purple-200 rounded-full text-xs">Firebase</span>
+                  <span className="px-3 py-1 bg-purple-100 dark:bg-purple-900/50 text-purple-800 dark:text-purple-200 rounded-full text-xs">TypeScript</span>
                 </div>
-                <a href="#" className="inline-flex items-center text-purple-600 dark:text-purple-400 hover:text-purple-800 dark:hover:text-purple-300 font-medium">
+                <a href="https://github.com/gabriell-c/trayt-react" className="inline-flex items-center text-purple-600 dark:text-purple-400 hover:text-purple-800 dark:hover:text-purple-300 font-medium">
                   Ver no GitHub <i className="fas fa-arrow-right ml-2"></i>
                 </a>
               </div>
@@ -354,99 +371,21 @@ function App() {
             <div className="card-hover bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-lg transition-all duration-300">
               <div className="h-48 overflow-hidden">
                 <img 
-                  src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+                  src={Preview3} 
                   alt="Social Media Dashboard" 
                   className="w-full h-full object-cover"
                 />
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-bold mb-2">Dashboard de Mídias Sociais</h3>
+                <h3 className="text-xl font-bold mb-2">Portifólio</h3>
                 <p className="text-gray-600 dark:text-gray-300 mb-4">
                   Painel de análise de dados de redes sociais com gráficos interativos e relatórios.
                 </p>
                 <div className="flex flex-wrap gap-2 mb-4">
-                  <span className="px-3 py-1 bg-purple-100 dark:bg-purple-900/50 text-purple-800 dark:text-purple-200 rounded-full text-xs">Python</span>
-                  <span className="px-3 py-1 bg-purple-100 dark:bg-purple-900/50 text-purple-800 dark:text-purple-200 rounded-full text-xs">Django</span>
-                  <span className="px-3 py-1 bg-purple-100 dark:bg-purple-900/50 text-purple-800 dark:text-purple-200 rounded-full text-xs">PostgreSQL</span>
-                  <span className="px-3 py-1 bg-purple-100 dark:bg-purple-900/50 text-purple-800 dark:text-purple-200 rounded-full text-xs">Chart.js</span>
-                </div>
-                <a href="#" className="inline-flex items-center text-purple-600 dark:text-purple-400 hover:text-purple-800 dark:hover:text-purple-300 font-medium">
-                  Ver no GitHub <i className="fas fa-arrow-right ml-2"></i>
-                </a>
-              </div>
-            </div>
-            
-            {/* Project 4 */}
-            <div className="card-hover bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-lg transition-all duration-300">
-              <div className="h-48 overflow-hidden">
-                <img 
-                  src="https://images.unsplash.com/photo-1522542550221-31fd19575a2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
-                  alt="Weather App" 
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <div className="p-6">
-                <h3 className="text-xl font-bold mb-2">Aplicativo de Previsão do Tempo</h3>
-                <p className="text-gray-600 dark:text-gray-300 mb-4">
-                  Aplicativo que mostra previsão do tempo em tempo real com base na localização do usuário.
-                </p>
-                <div className="flex flex-wrap gap-2 mb-4">
-                  <span className="px-3 py-1 bg-purple-100 dark:bg-purple-900/50 text-purple-800 dark:text-purple-200 rounded-full text-xs">JavaScript</span>
-                  <span className="px-3 py-1 bg-purple-100 dark:bg-purple-900/50 text-purple-800 dark:text-purple-200 rounded-full text-xs">API</span>
-                  <span className="px-3 py-1 bg-purple-100 dark:bg-purple-900/50 text-purple-800 dark:text-purple-200 rounded-full text-xs">Geolocation</span>
-                </div>
-                <a href="#" className="inline-flex items-center text-purple-600 dark:text-purple-400 hover:text-purple-800 dark:hover:text-purple-300 font-medium">
-                  Ver no GitHub <i className="fas fa-arrow-right ml-2"></i>
-                </a>
-              </div>
-            </div>
-            
-            {/* Project 5 */}
-            <div className="card-hover bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-lg transition-all duration-300">
-              <div className="h-48 overflow-hidden">
-                <img 
-                  src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
-                  alt="Blog Platform" 
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <div className="p-6">
-                <h3 className="text-xl font-bold mb-2">Plataforma de Blog</h3>
-                <p className="text-gray-600 dark:text-gray-300 mb-4">
-                  Sistema completo de blog com autenticação, comentários e editor markdown.
-                </p>
-                <div className="flex flex-wrap gap-2 mb-4">
-                  <span className="px-3 py-1 bg-purple-100 dark:bg-purple-900/50 text-purple-800 dark:text-purple-200 rounded-full text-xs">PHP</span>
-                  <span className="px-3 py-1 bg-purple-100 dark:bg-purple-900/50 text-purple-800 dark:text-purple-200 rounded-full text-xs">MySQL</span>
-                  <span className="px-3 py-1 bg-purple-100 dark:bg-purple-900/50 text-purple-800 dark:text-purple-200 rounded-full text-xs">Laravel</span>
-                </div>
-                <a href="#" className="inline-flex items-center text-purple-600 dark:text-purple-400 hover:text-purple-800 dark:hover:text-purple-300 font-medium">
-                  Ver no GitHub <i className="fas fa-arrow-right ml-2"></i>
-                </a>
-              </div>
-            </div>
-            
-            {/* Project 6 */}
-            <div className="card-hover bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-lg transition-all duration-300">
-              <div className="h-48 overflow-hidden">
-                <img 
-                  src="https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1406&q=80" 
-                  alt="Portfolio Template" 
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <div className="p-6">
-                <h3 className="text-xl font-bold mb-2">Template de Portfólio</h3>
-                <p className="text-gray-600 dark:text-gray-300 mb-4">
-                  Template moderno e responsivo para portfólios de desenvolvedores.
-                </p>
-                <div className="flex flex-wrap gap-2 mb-4">
-                  <span className="px-3 py-1 bg-purple-100 dark:bg-purple-900/50 text-purple-800 dark:text-purple-200 rounded-full text-xs">HTML</span>
-                  <span className="px-3 py-1 bg-purple-100 dark:bg-purple-900/50 text-purple-800 dark:text-purple-200 rounded-full text-xs">CSS</span>
-                  <span className="px-3 py-1 bg-purple-100 dark:bg-purple-900/50 text-purple-800 dark:text-purple-200 rounded-full text-xs">JavaScript</span>
+                  <span className="px-3 py-1 bg-purple-100 dark:bg-purple-900/50 text-purple-800 dark:text-purple-200 rounded-full text-xs">React JS</span>
                   <span className="px-3 py-1 bg-purple-100 dark:bg-purple-900/50 text-purple-800 dark:text-purple-200 rounded-full text-xs">Tailwind CSS</span>
                 </div>
-                <a href="#" className="inline-flex items-center text-purple-600 dark:text-purple-400 hover:text-purple-800 dark:hover:text-purple-300 font-medium">
+                <a href="https://github.com/gabriell-c/portfolio_2.0" className="inline-flex items-center text-purple-600 dark:text-purple-400 hover:text-purple-800 dark:hover:text-purple-300 font-medium">
                   Ver no GitHub <i className="fas fa-arrow-right ml-2"></i>
                 </a>
               </div>
@@ -454,7 +393,7 @@ function App() {
           </div>
           
           <div className="text-center mt-12">
-            <a href="#" className="inline-flex items-center px-6 py-3 border-2 border-purple-600 text-purple-600 dark:text-purple-400 hover:bg-purple-600 hover:text-white dark:hover:text-white rounded-lg font-medium transition">
+            <a href="https://github.com/gabriell-c" className="inline-flex items-center px-6 py-3 border-2 border-purple-600 text-purple-600 dark:text-purple-400 hover:bg-purple-600 hover:text-white dark:hover:text-white rounded-lg font-medium transition">
               Ver Todos os Projetos <i className="fas fa-arrow-right ml-2"></i>
             </a>
           </div>
@@ -472,44 +411,56 @@ function App() {
             </p>
           </div>
 
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
           <div className="max-w-4xl mx-auto">
-            <div className="bg-gradient-to-br from-purple-500 to-pink-500 p-8 rounded-2xl shadow-xl transform transition-all duration-500 hover:scale-[1.02]">
-              <div className="certificate-carousel relative overflow-hidden h-64">
-                <div 
-                  className="certificate-slides flex transition-transform duration-300"
-                  style={{ transform: `translateX(-${currentSlide * 100}%)` }}
-                >
-                  <div className="certificate-slide flex-shrink-0 w-full h-full flex items-center justify-center">
-                    <div className="bg-white/20 backdrop-blur-md p-4 rounded-xl w-4/5 h-48 flex items-center justify-center">
-                      <i className="fas fa-certificate text-6xl text-white"></i>
-                    </div>
-                  </div>
-                  <div className="certificate-slide flex-shrink-0 w-full h-full flex items-center justify-center">
-                    <div className="bg-white/20 backdrop-blur-md p-4 rounded-xl w-4/5 h-48 flex items-center justify-center">
-                      <i className="fas fa-certificate text-6xl text-white"></i>
-                    </div>
-                  </div>
-                  <div className="certificate-slide flex-shrink-0 w-full h-full flex items-center justify-center">
-                    <div className="bg-white/20 backdrop-blur-md p-4 rounded-xl w-4/5 h-48 flex items-center justify-center">
-                      <i className="fas fa-certificate text-6xl text-white"></i>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="flex justify-center mt-6 space-x-2">
-                <button 
-                  className="certificate-prev w-10 h-10 rounded-full bg-white/20 text-white hover:bg-white/40 transition"
-                  onClick={() => setCurrentSlide((prev) => (prev - 1 + 3) % 3)}
-                >
-                  <i className="fas fa-chevron-left"></i>
-                </button>
-                <button 
-                  className="certificate-next w-10 h-10 rounded-full bg-white/20 text-white hover:bg-white/40 transition"
-                  onClick={() => setCurrentSlide((prev) => (prev + 1) % 3)}
-                >
-                  <i className="fas fa-chevron-right"></i>
-                </button>
-              </div>
+            <div className="bg-gradient-to-br from-primary-500 to-primary-900 max-md:p-3 md:p-8 rounded-2xl shadow-xl transform transition-all duration-500 hover:scale-[1.02]">
+              <Swiper style={{
+                  "--swiper-pagination-color": "#9333ea",
+                  "--swiper-navigation-color": "#9333ea",
+                }}
+                pagination={{
+                  dynamicBullets: true,
+                }}
+                loop={true}
+                className="mySwiper w-full max-w-4xl p-[20px] mx-auto"
+              >
+                <SwiperSlide>
+                  <img src={certificates} alt="Certificado HTML5 e CSS3" className="max-w-full rounded-2xl max-h-full object-contain" />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src={certificates2} alt="Certificado JavaScript" className="max-w-full rounded-2xl max-h-full object-contain" />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src={certificates3} alt="Certificado React.js" className="max-w-full rounded-2xl max-h-full object-contain" />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src={certificates4} alt="Certificado MySQL" className="max-w-full rounded-2xl max-h-full object-contain" />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src={certificates5} alt="Certificado Bootstrap" className="max-w-full rounded-2xl max-h-full object-contain" />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src={certificates6} alt="Certificado Typescript" className="max-w-full rounded-2xl max-h-full object-contain" />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src={certificates7} alt="Certificado PHP" className="max-w-full rounded-2xl max-h-full object-contain" />
+                </SwiperSlide>
+              </Swiper>
             </div>
           </div>
         </div>
