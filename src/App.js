@@ -15,6 +15,7 @@ import certificates7 from './imgs/certificate/PHP.webp'; // caminho relativo
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
 import Preview3 from './read_me/preview.jpg'; // caminho relativo
+import Curriculo from '../public/Currículo Gabriel .pdf'
 
 // Import Swiper styles
 import 'swiper/css';
@@ -219,7 +220,7 @@ function App() {
               Desenvolvedor Web Fullstack
             </h2>
             <div className="flex flex-wrap gap-4">
-              <a href="./public/Currículo Gabriel .pdf" download="Currículo Gabriel .pdf" className="px-6 py-3 bg-purple-600 hover:bg-purple-700 text-white rounded-lg font-medium transition shadow-lg hover:shadow-purple-500/30">
+              <a href={Curriculo} download="Currículo Gabriel .pdf" className="px-6 py-3 bg-purple-600 hover:bg-purple-700 text-white rounded-lg font-medium transition shadow-lg hover:shadow-purple-500/30">
                 Baixar Currículo
               </a>
               <a onClick={() => scrollToSection('projects')} className="px-6 py-3 border-2 border-purple-600 text-purple-600 dark:text-purple-400 hover:bg-purple-600 hover:text-white dark:hover:text-white rounded-lg font-medium transition">
@@ -259,7 +260,7 @@ function App() {
               </p>
               
               <div className="mt-8">
-                <a href="./public/Currículo Gabriel .pdf" download="Currículo Gabriel .pdf" className="inline-flex items-center px-6 py-3 bg-purple-600 hover:bg-purple-700 text-white rounded-lg font-medium transition shadow-lg hover:shadow-purple-500/30">
+                <a href={Curriculo} download="Currículo Gabriel .pdf" className="inline-flex items-center px-6 py-3 bg-purple-600 hover:bg-purple-700 text-white rounded-lg font-medium transition shadow-lg hover:shadow-purple-500/30">
                   <i className="fas fa-download mr-2"></i> Baixar Currículo (PDF)
                 </a>
               </div>
