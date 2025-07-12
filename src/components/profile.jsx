@@ -8,7 +8,7 @@ const ICONS = [
   <i className="devicon-html5-plain colored" />,
   <i className="devicon-css3-plain colored" />,
   <i className="devicon-javascript-plain colored" />,
-  <i className="devicon-typescript-plain colored" />,
+  <i className="devicon-wordpress-plain" />,
   <i className="devicon-python-plain" />,
   <i className="devicon-azuresqldatabase-plain colored" />,
   <i className="devicon-git-plain colored" />,
@@ -21,7 +21,6 @@ const OrbitProfile = () => {
   useEffect(() => {
         const updateRadius = () => {
         const screenWidth = window.innerWidth;
-        console.log("Largura da tela:", screenWidth);
 
         let newRadius;
 

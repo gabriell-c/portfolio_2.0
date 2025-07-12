@@ -14,7 +14,8 @@ import certificates6 from './imgs/certificate/certificado_typescript.webp'; // c
 import certificates7 from './imgs/certificate/PHP.webp'; // caminho relativo
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
-import Preview3 from './read_me/preview.jpg'; // caminho relativo
+import Preview3 from './read_me/preview.png'; // caminho relativo
+import ApiImg from './imgs/api.webp'
 import Curriculo from './read_me/Currículo Gabriel .pdf'; // caminho relativo
 
 // Import Swiper styles
@@ -116,7 +117,7 @@ function App() {
       <header className="fixed w-full top-0 z-50 backdrop-blur-md bg-white/70 dark:bg-secundary-50/70 shadow-sm">
         <nav className="container mx-auto px-6 py-2">
           <div className="flex justify-between items-center">
-            <a href="#" className="text-2xl font-bold gradient-text">
+            <a href="https://portfolio--gabriel.vercel.app" className="text-2xl font-bold gradient-text">
               <img src={Logo} alt="Logo" className="h-[50px] inline-block" />
             </a>
             
@@ -393,7 +394,36 @@ function App() {
                 </a>
               </div>
             </div>
+
+
+            {/* Project 4 */}
+            <div className="card-hover bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-lg transition-all duration-300">
+              <div className="h-48 overflow-hidden">
+                <img 
+                  src={ApiImg} 
+                  alt="Social Media Dashboard" 
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-bold mb-2">Api RESTful</h3>
+                <p className="text-gray-600 dark:text-gray-300 mb-4">
+                  API RESTful com rotas CRUD organizadas e fácil integração.
+                </p>
+                <div className="flex flex-wrap gap-2 mb-4">
+                  <span className="px-3 py-1 bg-purple-100 dark:bg-purple-900/50 text-purple-800 dark:text-purple-200 rounded-full text-xs">PHP</span>
+                  <span className="px-3 py-1 bg-purple-100 dark:bg-purple-900/50 text-purple-800 dark:text-purple-200 rounded-full text-xs">Docker</span>
+                  <span className="px-3 py-1 bg-purple-100 dark:bg-purple-900/50 text-purple-800 dark:text-purple-200 rounded-full text-xs">SQL</span>
+                </div>
+                <a href="https://github.com/gabriell-c/gomoney-API" className="inline-flex items-center text-purple-600 dark:text-purple-400 hover:text-purple-800 dark:hover:text-purple-300 font-medium">
+                  Ver no GitHub <i className="fas fa-arrow-right ml-2"></i>
+                </a>
+              </div>
+            </div>
           </div>
+
+
+          
           
           <div className="text-center mt-12">
             <a href="https://github.com/gabriell-c" className="inline-flex items-center px-6 py-3 border-2 border-purple-600 text-purple-600 dark:text-purple-400 hover:bg-purple-600 hover:text-white dark:hover:text-white rounded-lg font-medium transition">
@@ -415,21 +445,6 @@ function App() {
           </div>
 
         
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
           <div className="max-w-4xl mx-auto">
             <div className="bg-gradient-to-br from-primary-500 to-primary-900 max-md:p-3 md:p-8 rounded-2xl shadow-xl transform transition-all duration-500 hover:scale-[1.02]">
               <Swiper style={{
