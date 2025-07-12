@@ -1,4 +1,4 @@
-<img align="center" width="" src="./src/imgs/logo.webp">
+<img align="center" HEIGHT="300" src="./src/imgs/logo.webp">
 
 ---
 
@@ -9,7 +9,7 @@
 <h2 align="center">📖Sobre</h2>
 
 <p align="center">Este portfólio foi desenvolvido do zero utilizando React.js, com foco em responsividade, performance e experiência do usuário. Ele reúne meus principais projetos, todos funcionais e conectados aos seus repositórios e domínios, além de uma seção com certificados que comprovam minha trajetória de aprendizado e uma área de contato direto.
-<br>
+<br><br>
 O layout foi pensado para ser limpo e intuitivo, com componentes reutilizáveis, navegação fluida e design responsivo, garantindo uma boa visualização em qualquer dispositivo. Este projeto representa minha dedicação em evoluir como desenvolvedor front-end e criar soluções modernas com qualidade e atenção aos detalhes.</p>
 
 ---
