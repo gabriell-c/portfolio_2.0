@@ -344,6 +344,33 @@ function App() {
                 </a>
               </div>
             </div>
+
+            {/* Project 1.2*/}
+            <div className="card-hover bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-lg transition-all duration-300">
+              <div className="h-48 overflow-hidden">
+                <img 
+                  src="https://raw.githubusercontent.com/gabriell-c/artuniverse/main/read_me/artuniverse2.png" 
+                  alt="E-commerce Platform" 
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-bold mb-2">Artuniverse - Rede Social</h3>
+                <p className="text-gray-600 dark:text-gray-300 mb-4">
+                  Plataforma completa de rede social com gerenciamento de usuários, postagens e interações.
+                </p>
+                <div className="flex flex-wrap gap-2 mb-4">
+                  <span className="px-3 py-1 bg-purple-100 dark:bg-purple-900/50 text-purple-800 dark:text-purple-200 rounded-full text-xs">PHP</span>
+                  <span className="px-3 py-1 bg-purple-100 dark:bg-purple-900/50 text-purple-800 dark:text-purple-200 rounded-full text-xs">MySQL</span>
+                  <span className="px-3 py-1 bg-purple-100 dark:bg-purple-900/50 text-purple-800 dark:text-purple-200 rounded-full text-xs">Python</span>
+                  <span className="px-3 py-1 bg-purple-100 dark:bg-purple-900/50 text-purple-800 dark:text-purple-200 rounded-full text-xs">Tailwind CSS</span>
+                  <span className="px-3 py-1 bg-purple-100 dark:bg-purple-900/50 text-purple-800 dark:text-purple-200 rounded-full text-xs">Javascript</span>
+                </div>
+                <a href="https://github.com/gabriell-c/artuniverse" className="inline-flex items-center text-purple-600 dark:text-purple-400 hover:text-purple-800 dark:hover:text-purple-300 font-medium">
+                  Ver no GitHub <i className="fas fa-arrow-right ml-2"></i>
+                </a>
+              </div>
+            </div>
             
             {/* Project 2 */}
             <div className="card-hover bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-lg transition-all duration-300">
@@ -563,8 +590,9 @@ function App() {
             <div className="flex flex-col items-center md:items-end">
               <div className="flex space-x-6 mb-4">
                 <a href="https://github.com/gabriell-c" className="hover:text-purple-400 transition"><i className="fab fa-github text-xl"></i></a>
-                <a href="https://www.linkedin.com/in/gabriell-cardoso/" className="hover:text-purple-400 transition"><i className="fab fa-linkedin text-xl"></i></a>
+                <a href="https://www.linkedin.com/in/gabriell-cardoso" className="hover:text-purple-400 transition"><i className="fab fa-linkedin text-xl"></i></a>
                 <a href="https://wa.me/5516992974306" className="hover:text-purple-400 transition"><i className="fab fa-whatsapp text-xl"></i></a>
+                <a href="https://www.instagram.com/gabri3l.cardoso" className="hover:text-purple-400 transition"><i className="fab fa-instagram text-xl"></i></a>
               </div>
               <p>&copy; 2025 Gabriel Cardoso. Todos os direitos reservados.</p>
             </div>
