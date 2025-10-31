@@ -17,6 +17,7 @@ O layout foi pensado para ser limpo e intuitivo, com componentes reutilizáveis,
 <h2 align="center">✔O site contém:</h2>
 
 ✅ Responsivo<br>
+✅ Dark/Light mode<br>
 ✅ Botão de download<br>
 ✅ Animações<br>
 ✅ Back to top<br>
